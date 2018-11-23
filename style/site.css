@@ -98,6 +98,16 @@ p3 {
 visibility:visible;
 }
 
+#col {
+	text-align: center;
+}
+
+.abstract-text {
+	margin-right: 20%;
+	margin-left: 20%;
+	
+	
+}
 /*
 .columns .col {
   width: 33.3333%;
@@ -109,13 +119,19 @@ visibility:visible;
 .endLinkAct {
   text-align: center;
   font-family: 'Arimo', sans-serif;
-  	margin: 0 auto;
-	height: 100%;
+  margin: 0 auto;
+  height: 100%;
+  color: blue;
   }
 
 .endLinkTitle {
   font-family: 'Arimo', sans-serif;
   font-size: 2rem;
   text-align: center; 
-  	margin: 0 auto;
-	height: 100%;}
+  margin: 0 auto;
+  height: 100%;
+  color: blue;
+  text-shadow: 0 0 10px #c6f5ff;
+
+	
+}
