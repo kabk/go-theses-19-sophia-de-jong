@@ -1,197 +1,482 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Sophia de Jong - Chapter 1</title>
+	<title>INDEX</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	
 	<link rel="stylesheet" type="text/css" href="style/site.css" />
 <!-- 	<link rel= "stylesheet" type="text/css" href=""> -->
 	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=B612+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link rel='shortcut icon' type='image/x-icon' href="favicon.png" />
 <!-- 	<meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+<script>
+   // DRAG IMAGES
+  $( function() {
+    $( ".draggable" ).draggable();
+  } );
+  
+    $( function() {
+    $( ".draggable2" ).draggable();
+  } );
+  
+  </script>
 
 
-<!--
 	<style type="text/css">
 		
-		@media print {
-			page
-			{
+		@media print {	
+			
+			@font-face {
+	font-family: 'Edgard', sans-serif;
+/* 	font-weight: normal; */
+    src: url('OPTIEdgar-Extended.otf') format("opentype"); 
+}
+		
+			
+		.bgcol{
+		background-color:#000000;
+		}
+			body, html {
+/* 		background: #ffffff; */
+		background-color: #000000;  
+		-webkit-print-color-adjust: exact !important;
+
+						
+		}
+		
+		.container {
+			width: 100%;
+			height: auto;
+					background-color: #000000;  
+		-webkit-print-color-adjust: exact !important;
+			}
+			
+			.table_contents {
+			display: inline-block !important;
+			height: 27cm;
+			}
+			
+			h11 {
+				font-family: 'Edgard', sans-serif;
+				font-size: 40pt;
+				margin-top: 0cm;
+				padding-top: 0cm;
+/* 				display: inline-block !important; */
+	 			text-shadow: 0 0 10px white;
+	 			height: 3cm;
+			}
+			
+			.subtitles {
+				margin-left:1cm;
+				margin-right: 0cm;
+				text-indent: 0%;
+				padding-left: 0%;
+				padding-right: 0%;
+
 				
+			}
+						
+			p {
+				font-size: 12pt;
+				margin-left:5cm;
+				margin-right: 2cm;
+				color: white;
+				background: black;
+				padding-left: 0%;
+				padding-right: 0%;
+				background-color: black;
+ 			}
+ 			
+ 			p1 {
+	 			font-size: 7.5pt;
+	 			color: white;
+	 			line-height: 1;
+	 			font-family: 'Suisse', serif;
+	 			padding-left: 0%;
+/* 	 			padding-left: 15%; */
+	 			margin-right: 0;
+	 			margin-left: 0;
+	 			text-indent: 0;
+/* 	 			text-shadow: 0 0 10px white; */
+ 			}
+ 			
+ 			sup {
+	 			font-size: 8pt;
+	 			color: black;
+ 			}
+ 			
+ 			sup2 {
+ 			color: black;
+ 			font-family: 'Suisse', serif;
+ 			font-size: 6pt;	
+			}
+ 			
+ 			.titles {
+	 			color: transparent;
+	 			display: none !important;
+ 			}
+ 			
+ 			.thesisname {
+	 			display: none !important;
+
+ 			}
+ 			h3 {
+	 		page-break-before: always;
+ 			color: white;
+ 			text-shadow: 0px 0px 10px black;
+ 			font-family: 'Edgard', sans-serif;
+ 			font-size: 25pt;
+ 			margin-left: 5%;
+ 			margin-right: 5%;
+ 			/* 	margin-left: 25%; */
+			/* 	margin-right: 15%; */
+			text-align: center;
+/* 			margin-bottom: 2%; */
+			text-indent: -1;
+			text-decoration: none;	
+/* 			text-stroke: 1px solid black; */
+			margin-top: 0%;
+			
+			
+ 			}
+ 			
+ 			.chapter_abstract{
+	 			color: white;
+/* 	 			opacity: 0; */
+/* 	 			rotate: 90deg; */
+/* 	 			display: none !important; */
+	
+
+ 			}
+ 			
+ 			
+ 			p9 {
+ 				display: block !important;
+	 			color: white;
+	 			font-size: 80pt;
+	 			text-align: center;
+	 			margin-top: 100%;
+	 			-webkit-transform: rotate(-90deg);
+	 			text-shadow: 0px 0px 10px white;
+	 				
+
+	 			}	
+	 			
+	 		.p8, .endLinkAct, .animate-flicker, .confirm_selection {
+		 			 display: none !important;
+			position: relative;
+			color: white;
+
+	 			}
+ 			
+ 			p7 {
+	 			font-size: 7.5pt;
+	 			margin: 0%;
+	 			line-height: 1;
+ 			}
+ 			
+ 			p11 {
+ 			display: block !important;
+ 			-webkit-transform: rotate: -90deg;
+			}
+ 			
+ 			h10 {
+	 			display: block !important;
+	 			-webkit-transform: rotate(-90deg);
+	 			text-align: left;
+
+ 			}
+ 		
+ 			
+ 			.glossary {
+ 			color: black;
+ 			font-size: 8pt;
+ 			background-color: white;
+ 			font-family: monospace;
+ 			/* 	margin-left: 20%; */
+ 			height: auto;
+ 			margin-left: 0.5cm;
+ 			margin-right: 0.5cm;
+ 			padding: 1%;
+/*  			line-height: 1; */
+ 			text-indent: 0%;
+ 			margin-top: 2%;
+ 			margin-bottom: 2%;
+ 			border: 1px solid black;
+/*  			    box-shadow: 0 0 20px #000000; */
+			}
+			
+			.abstract_text {
+			/* 	display: none !important; */
+			margin-bottom: 100%;
+			font-size: 12pt;
+
+			}
+			
+			.transhumanist_politics {
+				margin-top: 0cm;
+				padding-top: 0cm;
+			}
+			
+			.sources_world {
+				page-break-before: always;
+			}
+			
+			.transhumanist_politics {
+				margin-top: 0;
+			}
+
+			.chapter_nature{
+				display: block !important;
+			}
+			
+			.human_action {
+				margin-top: 5cm;
+			}
+			
+			.enhancement {
+/* 				margin-top: 5cm; */
+			}
+				
+ 			.draggable {
+ 				display: block;
+ 				width: 100%;
+ 				height: auto;
+ 				margin: auto;
+/*  				padding: 0.5cm; */
+ 			}	
+ 			
+ 			img {
+	 			width: 100%;
+/* 	 			margin-left: 2.5%; */
+/* 	 			margin-right: 2.5%; */
+	 			height: auto;
+/* 	 			padding: 0.5cm; */
+	 			float: left;
+	 			box-shadow: none;
+
+ 			}
+		
+ 			.titles {
+	 			display: none !important;
+ 			}
+ 			
+ 			figcaption {
+	 			font-family: 'Sitalic', serif;
+/* 	 			font-style: italic; */
+ 				color: white;
+ 				font-size: 3%;
+ 				margin-left 2cm;
+ 				padding-top: 0.5cm;
+ 				width: 100%;
+ 				bottom: 0%;
+ 				text-shadow: none !important;
+			}	
+			
+			.incrementClass:before {
+			counter-increment: page;
+			font-family: cursive;
+			font-size: 15pt;
+			} 	
+	
+	
+			
+			@page :left {
+			margin-left: 0.3cm;
+			margin-right: 1.5cm;
+			}
+
+			@page :right {
+			margin-right: 0.3cm;
+			margin-left: 1.5cm;
+			}
+	
+			@page
+			{
+			
+			@bottom-left-corners {
+				color: white;
+				z-index: 10000 !important;
+/* 		padding-left:2cm; */
+            content: "Page " counter(page);
+            
+            
+        	}
+        	
+        	#pagenum {
+				    display: table-footer-group;
+				}
+				
+			#pagenum:after {
+				    counter-increment: page;
+				    content: counter(page);
+			}
+        	
+			
+				size: A4;
+				margin-top: 0.5cm;
+				margin-bottom: 1.2cm;
+
+				background-color: black;
+				counter-increment: page;
+
 			}
 		}
 		
-		#chapter1
-		{
-			
-		}
-		p
-		{
-			
-		}
+		
+		
 		
 					
-	</style>
--->
+</style>
 	
-<!--
-	<style type="text/css">
+
+<style>
+		@font-face {
 		
-		div
-		{
-			background-color: pink;
-			
+		font-family: 'Edgard';	
+		src: url('OPTIEdgar-Extended.otf') format("opentype"); 
+		}
+		
+		@font-face {
+		
+		font-family: 'Sitalic';	
+		src: url('../fonts/SuisseWorks-RegularItalic.otf') format("opentype"); 
 		}
 		
 		
--->
 	</style>
 </head>
 
 <body>
-<!-- 	<div class="bg"> -->
+	
 <!--
-		<div class="tech-slideshow">
-		<div class="mover-1"></div>
-		<div class="mover-2"></div>
+<div class="titles draggable3" style="margin: 10% auto; text-align: center; text-shadow: 0px 0px 10px black; margin-top: 10%;font-family: 'Edgard', sans-serif; color: white; text-decoration: none;">
+	<a href="abstract.html" target="_blank">
+		<p8 class="index_font">TRANSHUMANISM<br><p15>and the<br></p15>ENHANCEMENT<br><p15>of<br></p15>NATURE</p8>
+	</a>
+	
+</div>
+-->
+
+
+
+<!--
+<div class="container"
+
+
+
+
+<h12 class="thesisname" style="font-family: 'Edgard', sans-serif; color: white; position: fixed; top: 2%; font-size: 1.5vh; text-indent: 0%; text-shadow: 0px 0px 10px black; margin: auto 0; text-align: center; z-index: 10000 !important; text-transform: uppercase;">Transhumanism and the Enhancement of Nature</h12>
+
+<p class="thesisname"style="font-family: 'Edgard', sans-serif; position: fixed; top: 1.5%; left: 0%; font-size: 1.5vh; text-indent: 0%; text-shadow: 0px 1px 10px black;	float: right; margin-left: 55%; margin-right: 0%; width: auto;text-shadow: 0px 1px 10px white;">Transhumanism and the Enhancement of Nature</p>
+
+
+	
+<div class="pagetitle"
+	<h1 style="position: fixed; text-align: center; background-color: transparent; padding: 0%; z-index: 8000; font-family: 'Plateia', sans-serif; color: black; text-shadow: 0px 0px 20px white; margin-top: 6%;	width: 100%; 	height: 100%; ">HOW DID WE GET HERE?<br>Transhumanism and the Enhancement of Nature</h1>
+</div>
+		<div class="chapters">
+		<h10 style="font-family: 'Edgard' sans-serif !important;">ABSTRACT</h10>
 		</div>
 -->
-<!-- </div>	 -->
-<video autoplay muted loop id="myVideo">
-  <source src="video-bg.mp4" type="video/mp4">
-<!--   Your browser does not support HTML5 video. -->
-</video>
-	<div class="container">
-	<h1 class="endLinkTitle greenShadow flick" style="text-align: center; padding-top: 3%">HOW DID WE GET HERE?<br>Debating Transhumanism and the Enhancement <br>of Nature, the Human and Human Nature</h1>
-	<h1> Abstract</h1>
-	<p class="abstract-text">In this age of advancing technology we are becoming increasingly impatient with the body’s nature has given us with our frailties and failing sight our broken limbs, the crippling limitations are lines and and age. While our mind soar, our bodies seem to frozen in time, what if we can build a better body? Use technology to fix this human form and then improve upon it. Make it stronger, faster, smarter and create the human of the future. But what for? Transhumanists, or those who are loyal to the ideals of the improvement of the human species threw enhancement as a moral obligation, believe they are the suppliers of the torch that will take us to an enlightened future. Transhumanism wants to dominate and modify the human nature, and take control of its human evolution to turn it into a post-human society, making the course of nature’s future a malleable property. On the present moment the humankind has the power to modify its environment and it’s own nature, this that before were just mere wishes or pure imagination; and as Tranhumanist believe the expression of a better (enhanced) humankind. This new posibilites of intervention had brought to the light the long debate of the relationship of nature, human and human nature. The human being in the present has the power to modify his environment and his own nature in ways that, in a not so distant past, were only pure fantasy. These new possibilities of intervention have brought back to the light the old debate about human nature and raise new questions about the consequences of this possible intervention. Throughout this work, I will question the implementation of transhumanist arguments and their philosophical ethics, counterposing them with the notion of nature. The eager of humankind to have control of nature. Because their ideology is based on only new technological developments has to be discussed and analysed in depth, taking into account both the benefits and possible harm of their implication, as well as the consequences on human nature itself.</p> 	
-		<h2>Keywords</h2>
- <p1>#Transhumanism #Nature #Human #Artificial #Emancipation #Control #Ethics #Society #Dehumanization</p1><br>
+
+<div class="container">
+
+			<div class="scroll-left">
+	      <marquee scrollamount="20" style="z-index: 100000 !important; left:0; ">TRANSHUMANISM and the ENHANCEMENT of NATURE</marquee>
+				</div>
+				
+				<div class="scroll-left">
+	      <marquee scrollamount="20" style="z-index: 100000 !important; left:0; bottom: 0; ">THESIS <p15>by</p15> SOPHIA DE JONG <p15>-</p15> Graphic Design <p15>-</p15> Royal Academy of Arts, 2018</marquee>
+				</div>
+		
+
+
+		<p  style="text-align: left; line-height: -1;text-indent: 0; top:-2%; position:fixed; font-size: 4em; margin-left: 0; padding-left: 0; margin-right: 0; width: 100%; left: 3%;padding-right:0; color:red;font-family: 'Edgard', sans-serif; line-height: 8vh;animation: glow2 .5s infinite alternate;">TRANSHUMANISM<p15> and the<br></p15> ENHANCEMENT<p15> of<br></p15> NATURE</p>	
+
+
 <!--
-	<h1> Chapter 1</h1>
-	<h2>Transhumanism and the Artificial World</h2>
+		<div class 
+	<p href="abstract.html" style="text-align: center; text-indent: 0%; margin-top: 70%; color:white;">Thesis by Sophia de Jong<br>Graphic Design<br>Royal Academy of Arts, 2018</p>
 -->
-			<p class="endLinkAct greenShadow flick"><br><br><br>WORLD<br></p>
-			<p class="endLinkTitle greenShadow flick" style="text-indent: 0%;">Transhumanism and the Artificial World<br><br><br></p>
-	<h3>1.1 Living in the Artificial World</h3>
-	<p>The humans in their aim to improve and enhance its quality of life, had been modifying the relationship and their bodies with the environment in which they live, transforming and reworking reality in response to their needs and expectations, and creating a more artificial than natural environment. That with property we can call “artificial world”. Herbert A. Simon, in his book The Sciences of the Artificial, says: “The world we live in today is much more a man-made, or artificial, world than it is a natural world. Almost every element in our environment shows evidence of human artifice.. [...] as using “artificial” in as neutral a sense as possible, as meaning man-made as opposed to natural“. <sup>1</sup> This artificial world, which is not a fictitious world, it actually  helps to improve the life's obstacles, and it is a substantial part of the cultural and social environments.<br>
-	<p>Technology can be found or exists everywhere. <sup>2</sup> We can affirm this just by simply look of what surrounds us and put on evidence that everything has been a creation of the man; how do we behave, how did societies developed and as a consequence our culture that bears the indelible stamp of technology. <sup>3</sup> The artificial world is everything that surrounds us that is made by a human. On every present moment technological action leaves as a consequence the artificial world we live in. Now, we must understand it as a global unit and the elements that surrounds it, have an opinion and take actions based on this understanding. In the last decades the speed of growth of this artificial world and the innovative rhythm that its development has developed. We live in a constantly changing reality for each and one of us, taking into account that although the relationship: humanity - nature is a subject that has deserved and deserves our attention, now we must start to worry about the relationship: humanity -artificial world. <sup>4</sup> This implies: study the interactions: humanity-artificial world and artificial world-natural world; and study the generation, evolution and control of the technological aspects of the environment, oriented as a system with the particular characteristics that must be analysed. <br></p>
-	<div id="wrapper">
-    	<img class="img"src="images/akurat_20171219084502_os58Tf.jpg" class="hover" /><br>
-		<p3 class="text">Fig. 1: Cryonics Capsules. Technology that they can make humans live forever by freezing them.</p3><br>
-	</div>
-	<p>The artificial world conditions our everyday life; and to avoid problems we should examine, know, understand and control which are the conditions they apply to humanity. The artificial world in several occasions behaves as a true interface between man and the natural world, making the relationship between both more indirect and complex. The complexity, density and amplitude that it has acquired poses the risk of isolating and completely enclosing man, blocking his perception of the natural world to which he belongs and is due. To avoid this, a clarification effort is required that makes it comprehensible and controllable; in other words, to make it transparent. <sup>5</sup> Human kind and specially scientists, technologists and engineers in the artificial world has to assume itself as its creator and responsible of it, have an active role on the eventualities of it.<br></p>
-	<p>As Heyward C. Sander wrote on his book Creator, Creation and Betrayal <sup>6</sup> “The artificial world is a creation that will work on our behalf. It will destroy the way their communities think and make their bodies react real different from the way they are supposed to function. It will also create mood swings so that they will not understand what is happening to them. [...] nature is the last of the resisters [...] we’ve been creating the master plan of how to take the natural world out from controlling everything, and in the future [...] the artificial world is king of the land”</p>
-<!-- 		<img class="img" src="images/the-creation.jpg"><br><br>				 -->
-	<p>Numerous transhumanists wish to take after life ways which would, at curtain point, require developing into a post-human: they long to reach mental statures as distant over any current human virtuoso as people are over other primates; to have boundless youth and vigor; to have resistance to illnesses; to work out control over their possess wants, temperaments, and mental states; to have the capability of getting rid of feeling tired, scornful, or chafed almost negligible things; to have an expanded capacity for joy, cherish, aesthetic appreciation, and quietness; to involvement novel states of awareness that current human capacities is limited only by imagination <sup>7</sup> . It appears likely that the basic truth of living an uncertainly long, solid, dynamic life would take anybody to posthumanity on the off chance that they went on collecting memories, abilities, and mental capabilities.<br><br></p>
-		<div id="wrapper">
-    	<img class="img"src="images/the-creation.jpg" class="hover" /><br>
-		<p3 class="text">Fig. 2: Michelangelo, The Creation of Adam. 1508–1512.</p3><br>
-	</div>
-	<p>As Gary Krug claims in his book ‘Communication, Technology and Cultural Change’: “Within the technological system people exist in spaces already constructed, and they have adapted themselves to this world as simply the way things are.” <sup>8</sup> In the actual world, if we talk about ​​progress we immediately associate it with technology, because as we currently conceive it is linked to the all the qualities that life has. It is almost impossible to think about how this qualities if we separate them from technology.<sup>9</sup></p>
-
-<br><h3>1.2 Human Action is not Nature</h3><br><br>
-	<div id="wrapper">
-    	<img class="img"src="images/1531761133.jpg" class="hover" /><br>
-    	<img class="img"src="images/18467748_1488480085.009_funddescription-945x591.png" class="hover" /><br>
-		<p3 class="text">Fig. 3: ‘Real Bodies’Exhibition. Ventura XV Space. Milan, Italy. 2017.</p3><br>
-		<p3 class="text">Fig. 4: ‘Leonardo DaVinci's reinvention of the Vitruvian man.</p3><br>
-	</div>				
-	<p>The meaning of perfection it is dubious and complex. The humankind striving to obtain perfection executes flawless techniques, virtues or excellence. <sup>10</sup> But even if we are in the best of conditions,transhumanist believe that what we had achieved till now as a specie is not good enough. From a tranhumanist perspective, perfection has to do with the unified notion of progress looking for enhanced human competence. <sup>11</sup> For the rest, the factors that contribute to the perfection of man exceed the decline of his biological vulnerability. Vulnerability is not the sad expression of our imperfection, but our constitutive quality. Precisely because we are vulnerable, because we know we are exposed and finite, we live without saving anything for the return, we join together as members of the same family and we can love each other.<br></p>
-	<p>Transhumanism has an enormous power of fascination. The same one that has always exhibited every speech that declares with conviction that tomorrow belongs to him. Generically, bet on what looks like a winning horse. After all, if we look at the future with sufficient distance, with the distance of thousands or millions of years, the human being will no longer be here, and his descendants, be biological, or technological, or a mixture of both, they may be classified as posthumous. That, of course, if we do not finish earlier with the conditions that make the life of our species possible, <sup>12</sup> which for the moment seems more likely, especially if we had to depend on the strange proposals of transhumanism to avoid self-destruction. If it is, however, so questionable is primarily because it is an ambiguous discourse, disoriented and simplifying in its objectives and questionable in its budgets.  Would it be boring to live for an inconclusively long time and can this possibly make a better world?<br>
-	<p>The emancipation that transhumanism proposes is not, therefore, a true progress, but an instrument of self-alienation; a superstition that clashes frontally with the universal thought that has been characterized, from the beginning of history, by the recognition of the dignity of man, of each and every one of the men, regardless of their systemic functionality and their operational capacities.<br></p>
-	 <p>The absence of human autonomy is the significance of nature. <sup>13</sup> Transhumanism urges us to abruptly abandon the human, since it considers that the most effective way to end suffering is to get rid of the biological substrate that causes it, in which it sees only a burden that prevents all transcendence. Thus, the late modern sentiment that the human subject lacks a future, and adds the resolution that it does not deserve to have it, is preeminent. Therefore, what he presents as a redemption has the appearance of being rather a surrender. All meaning and all ends are placed in the hands of a techno-scientific utopia that relies on an unlimited human plasticity, and discards, without any justification, the possibility of an irreversible break. The activities and actions humans fulfil and accomplish are not nature itself, but they have the capabilities to design and develop it - genuine nature in all its performance, threats for the freedom of choice and unknown outcomes. In show disdain towards all our attempts and tests, it is still rarely predictable to shape life around nature’s unpredictability. <sup>14</sup> But each time that nature appears to have been prevailed, it is again in the front line of a new combat with the humanity’s action.<br></p>
-	<p>Technological innovation and production should improve society's relationship with everyday life problems and solutions throw ethical and contoled technological action. As a profit for humanity and societies, humans have to be aware that the technological action has consequences and should have control and guide technology. It is not about denying it or disregarding its potential, but rather to maximize the benefits, but minimizing the risks. Some undesired effects can be avoided by evaluation the impact of it threw ethical action, regulation and forecasting. <sup>15</sup> There will undoubtedly be transformations that we can and should carry out to improve our condition, but we will have to be very sure that we know the consequences well, especially about the purposes to which they will be directed and about who will have access to them and control over them. This has led, paradoxically, to be used on occasion to incite a blind flight forward in the way of life in which we have settled.<br></p>
-	<p>Transhumanism, in fact, although it includes diverse ideological currents and advocates radical social changes, has become one of the recent cultural formulas that best lend itself to the radicalisation of capitalism, turning the human being into a bio-artifact subject to the offer and the demand. <sup>16</sup> Among its most notable defenders are prestigious scientists and engineers, and yet, unless you have a realistic vision of today’s society, science and technology, it is difficult to assume your unwavering confidence that technological development will It will lead to the resolution of all the evils that have plagued us throughout our existence, including death <sup>17</sup>; in which social issues are ultimately solvable technical problems through better techniques, or simply selecting the type of beings suitable for existence; in which total dominion over nature is possible and desirable; and in which general happiness, paradise on earth, is within the reach of our laboratories; an emancipation of human nature.</p>
-	
-	
-<h3>1.3 Transhumanist Politics & Ideals</h3>
-<h3>1.4 Transhumanism and the Creation of new Social Structures</h3>
-
-			<h2><br>Sources</h2>
-<p1>1 Simon, H. A. The Sciences of the Artificial. MIT Press, 1996.</p1><br> 
-<p1>2 Berger, J. Ways of Seeing. Penguin Publishers, 1972.</p1><br> 
-<p1>3 Society for Philosophy & Technology (U.S.). Democracy in a Technological Society Vol. 9. Kluwer Academic Publishers, 1992. P. 161.</p1><br>
-<p1>4 Tymieniecka, A. T. Does the World Exist?: Plurisignificant Ciphering of Reality. Kluwer Academic Publishers, 2004.</p1><br>
-<p1>5 Arbesman, S. Overcomplicated: Technology at the Limits of Comprehension. Current Publishers, 2016. P.3.</p1><br>
-<p1>6 Heyward C. Sander Creator, Creation and Betrayal. iUniverse, 2010. P.29.</p1><br>
-<p1>7 Kurzweil, R. The Singularity is Near. Duckworth Overlook Publishers, 2005.</p1><br> 
-<p1>8 Krug, G. Communication, Technology and Cultural Change. SAGE Publications, 2005. P. 16.</p1><br>
-<p1>9 Schulz, R. Quality of Life Technology Handbook. CRC Press, 2013. P.111.</p1><br>
-<p1>10 Žižek, S. Lacan: The Silent Partners. Verso Publishers, 2006. P.182.</p1><br>
-<p1>11 Bostrom, N; Sandberg, A. The Wisdom of Nature: An Evolutionary Heuristic for Human Enhancement. Oxford University Press, 2008. P. 377.</p1><br>
-<p1>12 Mehlman, M. J. Transhumanist Dreams and Dystopian Nightmares: The Promise and Peril of Genetic Engineering JHU Press, 2012.</p1><br> 
-<p1>13 Heyd, T. Recognizing the Autonomy of Nature: Theory and Practice. Columbia University Press, 2005.</p1><br>
-<p1>14 Stanford Encyclopedia of Philosophy. Presuppositions of Aristotle’s Politics. https://plato.stanford.edu/entries/aristotle-politics/supplement2.html</p1><br>
-<p1>15 Ellul, J. The Technological System. Wipf and Stock Publishers, 1980. P. 48.</p1><br>
-<p1>16 Fukuyama, F. The Great Disruption. The Free Press Publishers.1999.</p1><br>
-<p1>17 More, M.,Vita-More, N. The Transhumanist Reader. John Wiley & Sons Publishers, 2005. Part V.</p1><br>
 
 
+		
+		<div class="enter_thesis" style=" font-familiy: 'Edgard', sans-serif;">
+		<a href="abstract.html" target="blank">
 
-<!-- <div class="columns" style="height: 93px;"> -->
-	<div class="col" id="chapter2">
-		<a href="chapter2.html">
-			<p class="endLinkAct greenShadow flick"><br><br><br>NATURE<br></p>
-			<p class="endLinkTitle greenShadow flick" style="text-indent: 0%;">Natural vs Enhaced. Normalisation and Singularity.<br><br><br></p>
-		</a>
-	</div>
-	<div class="col" id="chapter3">
-		<a href="chapter3.html">
-			<p class="endLinkAct greenShadow flick"><br><br><br>HUMAN<br></p>
-			<p class="endLinkTitle greenShadow flick" style="text-indent: 0%;">Dehumanization; a face of a transhumanist ideals.<br><br><br></p>
-		</a>
-	</div>
 <!--
-	<div class="col"></div>
-	<div class="col"></div>
+		<p style="text-align: center; text-indent: 0%; margin-top: 65%; font-size: 3em; color:red;">READ THESIS</p>
+		</a>
+		</div>
+-->
+		
+		
+			<div class="titles">
+	<a href="pdf/test_b&w.pdf" target="_blank">
+<!-- 		<img class="print_img" src="images/print.png" style="background-color: white;" title="Thesis to print"></a> -->
+		<h9 class="print" style=" width: inherit; color: red;">Print Thesis</h9>
+			</a>
+		</div> 
+		
+					<div class="titles">
+					<a href="abstract.html">
+	<!-- 		<img class="print_img" src="images/print.png" style="background-color: white;" title="Thesis to print"></a> -->
+		<h9 class="print" style=" float: left; margin: 0 auto;margin-left: 2%; left: 0%; right: 70%; color:red;text-align: left; margin-bottom: 10vh;">Read Thesis</h9>
+			</a>
+		</div> 
+		
+		
+		
+		
+		<div class="scroll-left">
+	      <marquee scrollamount="20" style="z-index: 100000 !important; left:0; ">TRANSHUMANISM <p15>and the</p15> ENHANCEMENT <p15>of</p15> NATURE</marquee>
+
+				</div>
+				
+				<div class="scroll-left" style="top:24%; width: auto; left: 0%;">
+				<marquee behavior="scroll" direction="right" scrollamount="10" style="margin-top: 5%; padding-top: 5%;">
+					<img style="-webkit-filter: grayscale(100%);"src="images/Swedish workers implanted with microchips to replace cash and ID.jpg"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/robocop_1987.0.jpg"  width="auto"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/gattaca-640x360.jpg" width="auto"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/technologica.jpg" width="auto"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/harunfarocki.png">
+					<img style="-webkit-filter: grayscale(100%);"src="images/area_v.jpg"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/rob-spence.png"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/technologica.jpg" width="auto"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/harunfarocki.png">
+					<img style="-webkit-filter: grayscale(100%);"src="images/Swedish workers implanted with microchips to replace cash and ID.jpg"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/robocop_1987.0.jpg"  width="auto"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/gattaca-640x360.jpg" width="auto"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/technologica.jpg" width="auto"/>
+					<img style="-webkit-filter: grayscale(100%);"src="images/harunfarocki.png">
+
+					
+				</marquee>
+				</div>
+	
+</div>
+
+</div>
+
+<!--
+<div id="pagenum" style="color:white">
+	dfdsfdfsd
 </div>
 -->
 
-<!--
-<div class="columns" style="height: 93px;">
-	<div class="col">
-		<a href="https://kabk.github.io/go-theses-sophia-de-jong/chapter2.html">
-			<p class="endLinkAct greenShadow flick">Chapter 2</p>
-			<p class="endLinkTitle greenShadow flick">Natural vs enhaced. normalization and the uncanny valley</p>
-		</a>
-	</div>
-	<div class="col"></div>
-	<div class="col"></div>
-</div>
--->
-
-
-
-<div class="content">
-<!--
-  <h1>Heading</h1>
-  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
--->
-  <button id="myBtn" onclick="myFunction()">Pause</button>
-</div>
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
-
-	</div>
-	
-
-
-
-	
+</body>
+</html>
 	
