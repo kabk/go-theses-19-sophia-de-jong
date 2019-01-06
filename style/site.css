@@ -10,8 +10,8 @@
 }
 
 @font-face {
-	font-family: 'Suisse', serif;
-    src: url('../fonts/SuisseWorks-Medium.otf'); 
+	font-family: 'Riccione';
+    src: url('../fonts/riccione-light.ttf'); 
 	font-weight: normal;
 }
 
@@ -78,7 +78,7 @@ body {
 /* 	padding-left: 20%; */
 /* 	background-color: black; */
 	-webkit-transition: opacity 1s ease-in-out;
-	-webkit-transition: transform .5s;
+	-webkit-transition: transform .2s;
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -87,7 +87,7 @@ body {
 	filter: grayscale(100%);	
 	background-color: black;
 	display: block;
-	transition: transform .5s;
+	transition: transform .2s;
 	width: 100%;
 	animation: glow .5s infinite alternate;
 
@@ -105,7 +105,7 @@ img{
 	height: auto;
 	width: 36.8vw;
 	padding: 1%;
-	border-radius: 25px;
+/* 	border-radius: 25px; */
 	border-color: solid black;
 	transition: 0.6s;		
 /* 	box-shadow: 0 0 20px #7bc1f2; */
@@ -237,7 +237,15 @@ h10 {
 .chapters {
 	font-family: 'Edgard' sans-serif !important; 
 	
-}	
+}
+
+
+/*
+.enter_thesis{
+	margin: 
+	
+}
+*/	
 .abstract_text {
 /* 	display: none !important; */
 	margin-top: 5%;
@@ -302,7 +310,7 @@ h5:hover {
 /* font-family: 'Theinhardt'; */
     text-transform: uppercase;
     color: red;
-/*     font-family: 'Suisse', serif; */
+/*     font-family: 'Riccione', serif; */
 
 }
 
@@ -331,37 +339,43 @@ h9:hover {
 /* font-family: 'Theinhardt'; */
     text-transform: uppercase;
     color: red;
-/*     font-family: 'Suisse', serif; */
+/*     font-family: 'Riccione', serif; */
 
 }
 
+/*
 .abstracttitle {
 	top: 10%;
 	animation: glow .5s infinite alternate;
 }
+*/
 .prologue {
-	top: 23%;
+	top: 10%;
 	animation: glow .5s infinite alternate;
 }
 .world {
-	top: 37%;
+	top: 10%;
 	animation: glow .5s infinite alternate;
 }
 .nature {
-	top: 50%;
+	top: 26%;
 	animation: glow .5s infinite alternate;
 }
 
 .human {
-	top: 63%;
+	top: 42%;
 	animation: glow .5s infinite alternate;
 
 }
 
 .epilogue {
-	top: 76%;
+	top: 58%;
 	animation: glow .5s infinite alternate;
+}
 
+.bibliography {
+	top: 74%;
+	animation: glow .5s infinite alternate;
 }
 
 .print {
@@ -372,7 +386,7 @@ h9:hover {
 sup {
 /*     color: #7bc1f2; */
 	color: white;
-	font-family: 'Suisse', serif;
+	font-family: 'Riccione', serif;
 	font-size: 0.3em;
 	line-height: 1;	
 }
@@ -380,7 +394,7 @@ sup {
 sup2 {
 /* 	color: #7bc1f2; */
 	color: red;
-	font-family: 'Suisse', serif;
+	font-family: 'Riccione', serif;
 	font-size: 1em;
 }
 
@@ -398,7 +412,7 @@ sup3 {
 
 p {
 	text-indent: 4%;
-    color: red;
+    color: white;
 /* 	font-family: 'Theinhardt', sans-serif; */
 /* 	font-family: 'B612 Mono', monospace; */
 
@@ -420,8 +434,8 @@ p {
 }
 
 p1 {
-    color: red;
-	font-family: 'Sitalic';
+    color: white;
+	font-family: 'Theinhardt', sans-serif;
 	font-size: 0.7em;
 	margin-left: 0%;
 	margin-right: 0%;
@@ -431,7 +445,7 @@ p1 {
 p3 {
 	
     color: white;
-	font-family: 'Suisse', serif;
+	font-family: 'Riccione', serif;
 	font-size: 1.3vh;
 	margin-left: 20%;
 	text-align: left;
@@ -996,7 +1010,7 @@ color: white;
 
 figcaption {
 	margin-left: 5%;
-	margin-top: 3.5%;
+	margin-top: 3.7%;
 	color: black;
 	border-color: pink;
 	font-family: 'Sitalic';
@@ -1022,6 +1036,7 @@ figcaption:hover{
 no-print {
 	display: block;
 }
+
 
 
 
