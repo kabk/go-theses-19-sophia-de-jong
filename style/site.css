@@ -162,7 +162,6 @@ img{
 	height: auto; 
 /* 	padding: 1%; */
 	display: block;
-	display: block;
 	margin-left: 30%;
 	z-index: 10000 !important;
 }
@@ -297,7 +296,7 @@ margin-top: 0%;
 right: 0%;
 z-index: 9000 !important; 
 font-family: 'Edgard', sans-serif; 
-font-size: 0.8em;
+font-size: 0.75em;
 text-align: right;
 width: auto;
 text-shadow: 0px 0px 10px white;
@@ -306,7 +305,7 @@ text-shadow: 0px 0px 10px white;
 h5:hover {
 /* font-family: 'Theinhardt'; */
     text-transform: uppercase;
-    color: white;
+    color: red;
 /*     font-family: 'Riccione', serif; */
 
 }
@@ -326,7 +325,7 @@ margin-top: 0%;
 right: 0%;
 z-index: 9000 !important; 
 font-family: 'Edgard', sans-serif; 
-font-size: 0.8em;
+font-size: 0.75em;
 text-align: right;
 width: auto;
 text-shadow: 0px 0px 10px white;
@@ -335,7 +334,7 @@ text-shadow: 0px 0px 10px white;
 h9:hover {
 /* font-family: 'Theinhardt'; */
     text-transform: uppercase;
-    color: white;
+    color: red;
 /*     font-family: 'Riccione', serif; */
 
 }
@@ -418,7 +417,8 @@ p {
 	z-index: 10 !important;
 	padding-left: 5%;
 	padding-right: 5%;
-	
+ hyphens: auto;	
+/*  	position: fixed; */
 
 }
 
@@ -566,6 +566,8 @@ font-family: "Suisse", serif;
  	transition: filter .5s ease-in-out;
  	z-index: 10000 !important;
     -webkit-filter:invert(0%);
+/*     	padding: 10% 10% 10% 10%; */
+
 
 
 
@@ -1023,8 +1025,10 @@ figcaption {
 	}
 	
 figcaption:hover{
-	color: red;
-/* 	background-color: black; */
+	color: black;
+	background-color: white;
+	border-color: white;
+
 /* 	transform: scale(1.5); */
 }
 
